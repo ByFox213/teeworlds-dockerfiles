@@ -27,6 +27,7 @@ WORKDIR /tw/build
 RUN cmake /tw/sources \
         -Wno-dev \
     -DCMAKE_INSTALL_PREFIX=/tw/install \
+        -DANTIBOT=ON \
         -DAUTOUPDATE=OFF \
         -DCLIENT=OFF \
         -DDEV=OFF \
